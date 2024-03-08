@@ -21,15 +21,15 @@ You can install these libraries using pip:
 ## Code Snippets
 
 Splitting data into training and testing sets:  
-`# Assume X and y are already defined
-from sklearn.model_selection import train_test_split
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)`
+```# Assume X and y are already defined  
+from sklearn.model_selection import train_test_split  
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)  ```
 
 Scaling Features with StandardScaler:  
-`from sklearn.preprocessing import StandardScaler
-scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)`
+```from sklearn.preprocessing import StandardScaler  
+scaler = StandardScaler()  
+X_train_scaled = scaler.fit_transform(X_train)  
+X_test_scaled = scaler.transform(X_test)```
 
 ## Acknowledgements
 Thanks to EdX for providing starter code and dataset.
